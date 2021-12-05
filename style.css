@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@300&family=Inter&family=Kanit:ital,wght@0,400;1,300&family=Oswald:wght@200;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@300&family=Inter&family=Kanit:ital,wght@0,300;0,400;1,300&family=Oswald:wght@200;500;600&display=swap");
+
+#Skin h1 {
+  background-color: #0099ff;
+  text-align: center;
+  margin-bottom: 0px;
+  font-family: "Anton", sans-serif;
+  font-weight: bold;
+  color: aliceblue;
+  word-spacing: 1px;
+}
+
+#Skin svg {
+  position: relative;
+  margin-top: 0px;
+}
+
+.skin-box {
+  position: relative;
+  background-color: rgb(69, 165, 243);
+  border-radius: 10px;
+  height: 500px;
+  transform-style: preserve-3d;
+}
+
+.skin-box::before {
+  content: "SENGGOL";
+  position: absolute;
+  color: #ffff;
+  font-size: 3.6em;
+  font-weight: bold;
+  font-style: italic;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.skin-box:hover::before {
+  opacity: 0.4;
+}
+
+.skin-box::after {
+  content: "DONG!!";
+  position: absolute;
+  color: #ffff;
+  font-size: 3.6em;
+  font-weight: bold;
+  font-style: italic;
+  top: 390px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.skin-box:hover::after {
+  opacity: 0.4;
+}
+
+.Louvre {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 1.5em;
+  opacity: 0;
+  transform: translate3d(0, 0, 50px);
+  transition: 0.3s;
+}
+
+.skin-box:hover .Louvre {
+  top: 11px;
+  opacity: 1;
+}
+
+.skinmc {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 100px);
+  max-width: 350px;
+  transition: 0.5s;
+}
+
+.skin-box:hover .skinmc {
+  transform: translate3d(-50%, -50%, 100px) scale(1.2);
+}
+
+.Paragraf h2 {
+  margin-top: 13%;
+  font-family: "Kanit", sans-serif;
+  font-weight: bold;
+}
+
+.Paragraf p {
+  margin-top: 5%;
+  font-family: "Kanit", sans-serif;
+}
